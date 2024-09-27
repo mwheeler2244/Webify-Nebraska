@@ -1,0 +1,46 @@
+.cta {
+    position: relative;
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+    color: white; /* Change text color for better visibility */
+    text-align: center;
+}
+
+.cta-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/cta4.JPG); /* Replace with your image URL */
+    background-size: cover;
+    background-attachment: fixed; /* Parallax effect */
+    background-position:center;
+    z-index: 1;
+  filter: brightness(80%);
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+    padding: 100px 20px; /* Adjust padding for positioning */
+}
+
+.cta h2 {
+    font-size: 2.5rem; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #ec5b53; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d14b43; /* Darker shade for hover effect */
+}
