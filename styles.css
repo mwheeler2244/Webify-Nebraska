@@ -182,6 +182,7 @@ nav {
 
 .nav__links li a {
   color: white;
+  
 }
 
 .nav__links a {
@@ -365,6 +366,7 @@ nav {
   border: 2px solid white;
   transition: background-color 0.3s;
   font-weight: var(--fw-med);
+  text-decoration: none;
 }
 
 .cta__button:hover {
@@ -441,4 +443,53 @@ nav {
   gap: var(--gap-400);
   padding-block: var(--padding-700);
   color: white;
+}
+
+
+/*------------ CRO ABOUT ---------------*/
+nav{
+ 
+}
+.banner{
+  position: relative;
+}
+.banner img{
+  max-height: 400px;
+  width: 100%;
+  z-index: -1;
+}
+.cro__about-title{
+position: absolute;
+inset: 0;
+top: 50%;
+transform: translateY(-50%);
+
+  color: white;
+}
+.cro__img-about{
+
+  
+  margin-inline: auto;
+  text-align: center;
+  max-width: 800px;
+ 
+  
+  
+}
+.cro__about-img img{
+  margin-inline: auto;
+  aspect-ratio: 1 / .5;
+
+ 
+  width: 100%;
+  max-width: 1200px;
+
+}
+
+
+
+@media (max-width:800px){
+  .email__container{
+    justify-content: center;
+  }
 }

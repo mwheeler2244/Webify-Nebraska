@@ -46,9 +46,7 @@
       <!--------------------- INTRO------------------- -->
 
       <section class="introduction">
-        <!-- <span>INTRODUCTION</span>
-            <h2>Designing Success Together</h2>
-            <p>At [Your Business Name], we believe that a well-designed website is the cornerstone of any successful business. Our team is passionate about helping you navigate the digital landscape by providing tailored web design solutions that not only look stunning but also drive results. Together, we can transform your online presence and create meaningful connections with your audience.</p> -->
+       
         <div class="statement">
           <div class="statement__header">
             <i class="fa-solid fa-crosshairs"></i>
@@ -201,15 +199,15 @@
   </body>
   <script>
     //   // When the page is scrolled, check if the hero section is passed
-    // window.addEventListener('scroll', function() {
-    //     var nav = document.querySelector('nav');
-    //     var heroHeight = document.querySelector('.hero').offsetHeight;
+   window.addEventListener('scroll', function() {
+         var nav = document.querySelector('nav');
+         var heroHeight = document.querySelector('.hero').offsetHeight;
 
-    //     if (window.scrollY > heroHeight) {
-    //         nav.classList.add('sticky-nav'); // Add sticky class when scrolled past the hero
-    //     } else {
-    //         nav.classList.remove('sticky-nav'); // Remove sticky class when within the hero section
-    //     }
-    // });
+         if (window.scrollY > heroHeight) {
+             nav.classList.add('sticky-nav'); // Add sticky class when scrolled past the hero
+         } else {
+             nav.classList.remove('sticky-nav'); // Remove sticky class when within the hero section
+         }
+     });
   </script>
 </html>
