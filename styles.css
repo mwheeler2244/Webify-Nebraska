@@ -169,6 +169,7 @@ nav {
   width: 100%;
   z-index: 100;
   max-width: 1800px;
+  justify-content: space-evenly;
 }
 nav .logo img {
   width: 75px;
@@ -541,6 +542,20 @@ footer .line {
 }
 
 /*------------ SEO ---------------*/
+.seo {
+  background-color: rgba(229, 229, 247, 0.6); /* Subtle background color */
+  background-image: radial-gradient(
+      rgba(68, 76, 247, 0.1) 1.95px,
+      /* Subtle pattern color */ transparent 1.95px
+    ),
+    radial-gradient(
+      rgba(68, 76, 247, 0.1) 1.95px,
+      rgba(229, 229, 247, 0.2) 1.95px
+    );
+  background-size: 78px 78px;
+  background-position: 0 0, 39px 39px;
+}
+
 .seo .banner {
   background-image: url("./assets/banner3.jpg");
 }
@@ -557,8 +572,9 @@ footer .line {
   margin-bottom: 120px;
 }
 .seo__services-box img {
-  max-width: 500px;
-  max-height: 500px;
+  max-height: 450px;
+  max-width: 450px;
+
   border-radius: 12px;
 }
 
@@ -718,5 +734,21 @@ footer .line {
   .webdev__services__list ul {
     gap: 0;
     flex-wrap: wrap;
+  }
+  .seo__services-box img {
+    max-height: 350px;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .seo__services-box ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap-700);
+  }
+
+  .seo ul img:first-of-type {
+    grid-row-start: 1;
   }
 }

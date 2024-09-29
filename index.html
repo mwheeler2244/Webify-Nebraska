@@ -206,8 +206,8 @@
 
   <script>
     window.addEventListener("scroll", function () {
-      var nav = document.querySelector("nav");
-      var heroHeight = document.querySelector(".hero").offsetHeight;
+      let nav = document.querySelector("nav");
+      let heroHeight = document.querySelector(".hero").offsetHeight;
 
       if (window.scrollY > heroHeight) {
         nav.classList.add("sticky-nav");
