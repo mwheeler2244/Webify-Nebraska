@@ -21,9 +21,11 @@
   </head>
   <body>
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <nav class="wrapper">
-          <div class="logo">logo</div>
+          <div class="logo">
+            <a href="#hero"><img src="./assets/logoweb2.png" alt="" /></a>
+          </div>
           <ul class="nav__links">
             <li><a href="">HOME</a></li>
             <li><a href="">ABOUT US</a></li>
@@ -33,11 +35,10 @@
           <button class="btn">Get Started</button>
         </nav>
         <div class="title">
-          <span>TRUST AND CLIENT FOCUS</span>
+          <p>TRUST AND CLIENT FOCUS</p>
           <h1>Helping Businesses Thrive with Strategic Web Design Solutions</h1>
           <p>
-            We create custom web designs that enhance your brand and engage
-            users.
+            We create custom websites that enhance your brand and engage users.
           </p>
         </div>
         <div class="overlay"></div>
@@ -46,7 +47,6 @@
       <!--------------------- INTRO------------------- -->
 
       <section class="introduction">
-       
         <div class="statement">
           <div class="statement__header">
             <i class="fa-solid fa-crosshairs"></i>
@@ -75,7 +75,7 @@
 
       <!--------------------- SERVICES------------------- -->
 
-      <section class="services">
+      <section class="services" id="services">
         <div class="title__header wrapper">
           <div class="header__sub">
             <ul>
@@ -89,15 +89,19 @@
           <article class="services__card">
             <img src="./assets/services.jpg" alt="" />
             <div class="services__card-text">
-              <p>Develop Website</p>
-              <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+              <p>Website Development</p>
+              <a href="webdev.html"
+                >Learn More <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </div>
           </article>
           <article class="services__card">
             <img src="./assets/services2.jpg" alt="" />
             <div class="services__card-text">
               <p>Search Engine Optimization <br />(SEO)</p>
-              <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="seo.html"
+                >Learn More <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </div>
           </article>
           <article class="services__card">
@@ -107,7 +111,9 @@
                 Conversion Rate Optimization <br />
                 (CRO)
               </p>
-              <a href="">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="CROabout.html"
+                >Learn More <i class="fa-solid fa-arrow-right"></i
+              ></a>
             </div>
           </article>
           <article class="services__card">
@@ -171,7 +177,8 @@
           </div>
         </div>
       </section>
-
+    </main>
+    <footer>
       <section class="email__contact">
         <div class="email__container">
           <input type="email" placeholder="Enter your email address" />
@@ -190,24 +197,23 @@
         </div>
         <div class="line"></div>
         <div class="copyright">
-          <p>@Copyright</p>
+          <p>@Copyright 2024</p>
           <p>All Rights Reserved</p>
         </div>
       </section>
-    </main>
-    <footer></footer>
+    </footer>
   </body>
-  <script>
-    //   // When the page is scrolled, check if the hero section is passed
-   window.addEventListener('scroll', function() {
-         var nav = document.querySelector('nav');
-         var heroHeight = document.querySelector('.hero').offsetHeight;
 
-         if (window.scrollY > heroHeight) {
-             nav.classList.add('sticky-nav'); // Add sticky class when scrolled past the hero
-         } else {
-             nav.classList.remove('sticky-nav'); // Remove sticky class when within the hero section
-         }
-     });
+  <script>
+    window.addEventListener("scroll", function () {
+      var nav = document.querySelector("nav");
+      var heroHeight = document.querySelector(".hero").offsetHeight;
+
+      if (window.scrollY > heroHeight) {
+        nav.classList.add("sticky-nav");
+      } else {
+        nav.classList.remove("sticky-nav");
+      }
+    });
   </script>
 </html>
