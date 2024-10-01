@@ -227,7 +227,7 @@ nav .logo img {
 .copywrite {
   text-align: center;
   margin-top: var(--margin-800);
-  margin-bottom: var(--margin-600);
+  padding-bottom: var(--margin-600);
 }
 /*==================HERO================= */
 
@@ -506,11 +506,11 @@ footer {
 }
 footer .line {
   width: 100%;
-  border-bottom: 1px solid rgb(231, 230, 230);
+  border-bottom: 1px solid rgb(200, 200, 200);
 }
 .footer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: 1fr .5fr 1fr;
   justify-items: center;
 
   padding-top: 120px;
@@ -523,7 +523,7 @@ footer .line {
 .footer p,
 .footer h4 {
   color: var(--textSecondary);
-  max-width: 40ch;
+  max-width: 50ch;
 }
 
 .footer__links ul {
@@ -542,19 +542,7 @@ footer .line {
 }
 
 /*------------ SEO ---------------*/
-.seo {
-  background-color: rgba(229, 229, 247, 0.6); /* Subtle background color */
-  background-image: radial-gradient(
-      rgba(68, 76, 247, 0.1) 1.95px,
-      /* Subtle pattern color */ transparent 1.95px
-    ),
-    radial-gradient(
-      rgba(68, 76, 247, 0.1) 1.95px,
-      rgba(229, 229, 247, 0.2) 1.95px
-    );
-  background-size: 78px 78px;
-  background-position: 0 0, 39px 39px;
-}
+
 
 .seo .banner {
   background-image: url("./assets/banner3.jpg");
@@ -570,7 +558,10 @@ footer .line {
   justify-items: center;
   align-items: center;
   margin-bottom: 120px;
+  
 }
+
+
 .seo__services-box img {
   max-height: 450px;
   max-width: 450px;
@@ -641,7 +632,7 @@ footer .line {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 300px;
+  height: 375px;
   position: relative;
   overflow: hidden;
 }
@@ -657,6 +648,14 @@ footer .line {
   text-align: center;
   z-index: 1;
 }
+.explore__services__about ul{
+  list-style: none;
+}
+.explore__services__about li i{
+ 
+  font-size: 1.5rem;
+  padding-right: 8px;
+ }
 .services__about-subhead h2 {
   text-align: center;
   margin-bottom: var(--margin-600);
@@ -696,6 +695,82 @@ footer .line {
   z-index: -1;
 }
 
+/*------------ CONTACT US---------------*/
+.contact__us-header{
+
+}
+.nav__contact__us{
+  display: flex;
+  gap: var(--gap-400);
+  background-color: white;
+  list-style: none;
+  margin-inline: auto;
+  padding: var(--padding-400) var(--padding-600);
+  border-radius: 100vw;
+}
+
+.nav__contact__us a{
+  color: var(--button);
+  text-decoration: none;
+
+}
+.nav__contact__us a:hover{
+text-decoration: underline;
+text-underline-offset: 4px;
+
+}
+.contact__us .banner{
+  background-image: url(./assets/contactus4.jpg);
+  background-size: cover;
+  min-height: 150vh;
+
+}
+.contact__us .contact__us-form{
+  margin-top: 15rem;
+
+max-width: 650px;
+margin-inline: auto;
+color: white;
+display: block;
+border-radius: 10px;
+background: rgba(13, 13, 13, 0.75);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+padding: var(--padding-700);
+}
+.contact__us-form{
+  color: white;
+  min-width: 375px;
+  margin-inline: auto;
+}
+.contact__us-form form{
+  
+}
+
+footer .location__col{
+  color:black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: var(--gap-600);
+  
+
+}
+.location__footer{
+  display: grid;
+  place-items: center;
+  gap: var(--gap-400);
+  
+}
+.location__footer i{
+  scale: 2;
+}
+.contact__us .contact__form{
+  color: black; 
+}
+
 @media (max-width: 800px) {
   .email__container {
     justify-content: center;
@@ -729,7 +804,7 @@ footer .line {
     padding-block: var(--padding-600);
   }
   iframe {
-    max-width: 400px;
+  
   }
   .webdev__services__list ul {
     gap: 0;
@@ -750,5 +825,8 @@ footer .line {
 
   .seo ul img:first-of-type {
     grid-row-start: 1;
+  }
+  .footer{
+    grid-template-columns: 1fr;
   }
 }
