@@ -783,6 +783,9 @@ footer .location__col{
   .cta__background {
     background-attachment: scroll;
   }
+  .banner{
+    background-attachment: scroll;
+  }
 
   .services__card-text {
     margin-top: auto;
@@ -828,5 +831,6 @@ footer .location__col{
   }
   .footer{
     grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
