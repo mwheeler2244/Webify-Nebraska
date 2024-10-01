@@ -10,7 +10,7 @@
   --fs-400: clamp(1rem, 1rem + 1.5vw, 1.5rem);
   --fs-450: clamp(1rem, 1rem + 1.65vw, 1.5rem);
   --fs-500: clamp(1rem, 1rem + 2vw, 2rem);
-  --fs-600: clamp(1.125rem, 1rem + 3vw, 2.25rem);
+  --fs-600: clamp(1.125rem, 1rem + 3vw, 2.5rem);
   --fs-700: clamp(1.25rem, 1rem + 5vw, 3.5rem);
   --fs-xl: clamp(2.5rem, 1rem + 15vw, 6rem);
   --fw-light: 300;
@@ -541,7 +541,7 @@ footer .line {
   color: #ec5b53;
 }
 
-/*------------ SEO ---------------*/
+/*------------ SEO.HTML ---------------*/
 
 
 .seo .banner {
@@ -579,19 +579,19 @@ footer .line {
   padding-block: 12px;
 }
 
-/*------------ WEB DEV SERVICE ---------------*/
+/*------------ WEB DEV SERVICE.HTML ---------------*/
 .webdev .banner {
   background-image: url("./assets/banner2.jpg");
 }
 .webdev__img {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+  
   justify-content: space-between;
   gap: var(--gap-400);
 }
 .webdev__img img {
-  max-width: 400px;
-  max-height: 400px;
+  
   border-radius: 12px;
 }
 .webdev__services__list ul {
@@ -610,29 +610,32 @@ footer .line {
   padding-block: 12px;
 }
 .webdev__together__quote {
-  font-size: var(--fs-500);
+  font-size: var(--fs-450);
+  max-width: 60ch;
+  margin-inline: auto;
+
 
   position: relative;
   padding-block: 100px;
   font-style: italic;
 }
-.fa-quote-left {
+.explore__services__about .fa-quote-left {
   position: absolute;
-
+top: 0;
   left: -20px;
   color: #ec5b5342;
   font-size: 7rem;
   z-index: -1;
 }
 
-/*------------ CRO SERVICE ---------------*/
+/*------------ CRO SERVICE.HTML ---------------*/
 
 .banner {
   background-image: url("./assets/banner.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 375px;
+  height: 400px;
   position: relative;
   overflow: hidden;
 }
@@ -642,7 +645,7 @@ footer .line {
   inset: 0;
   top: 50%;
   transform: translateY(-20%);
-  font-size: var(--fs-600);
+  font-size: var(--fs-700);
   color: white;
   margin-inline: auto;
   text-align: center;
@@ -668,8 +671,11 @@ footer .line {
 .cro__services-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: var(--gap-600);
+
   padding-bottom: 120px;
+}
+.cro__services-box img{
+  border-radius: 12px;
 }
 .cro__services-list h2 {
   text-align: center;
@@ -680,26 +686,26 @@ footer .line {
   margin-bottom: var(--margin-400);
 }
 .together__quote {
-  font-size: var(--fs-500);
-  max-width: 20ch;
+  font-size: var(--fs-450);
+  max-width: 30ch;
   position: relative;
   padding-top: var(--padding-600);
   font-style: italic;
 }
-.fa-quote-left {
+/* .explore__services__about .fa-quote-left {
   position: absolute;
   top: -20px;
   left: -20px;
   color: #ec5b5342;
   font-size: 7rem;
   z-index: -1;
-}
+} */
 
-/*------------ CONTACT US---------------*/
+/*------------ CONTACT US.HTML---------------*/
 .contact__us-header{
 
 }
-.nav__contact__us{
+.nav__sub-pages{
   display: flex;
   gap: var(--gap-400);
   background-color: white;
@@ -709,12 +715,14 @@ footer .line {
   border-radius: 100vw;
 }
 
-.nav__contact__us a{
+.nav__sub-pages a{
   color: var(--button);
   text-decoration: none;
+  font-weight: var(--fw-bld);
+
 
 }
-.nav__contact__us a:hover{
+.nav__sub-pages a:hover{
 text-decoration: underline;
 text-underline-offset: 4px;
 
@@ -805,6 +813,7 @@ footer .location__col{
   .footer {
     gap: var(--gap-700);
     padding-block: var(--padding-600);
+    overflow-x: hidden;
   }
   iframe {
   
@@ -833,4 +842,6 @@ footer .location__col{
     grid-template-columns: 1fr;
     justify-content: center;
   }
+  .webdev__img{
+  grid-template-columns: 1fr;
 }
