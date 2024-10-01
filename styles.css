@@ -5,7 +5,7 @@
   --textSecondary: rgb(75, 73, 73);
   --accent: #0082be;
 
-  --fs-300: clamp(0.75rem, 0.55rem + 1vw, 1rem);
+  --fs-300: clamp(0.875rem, 0.55rem + 1vw, 1.125rem);
   --fs-350: clamp(1rem, 0.75rem + 1vw, 1.25rem);
   --fs-400: clamp(1rem, 1rem + 1.5vw, 1.5rem);
   --fs-450: clamp(1rem, 1rem + 1.65vw, 1.5rem);
@@ -331,6 +331,7 @@ nav .logo img {
   text-decoration: none;
 }
 
+
 /*==================CTA================= */
 
 .cta {
@@ -361,9 +362,9 @@ nav .logo img {
   padding: 150px 20px;
 }
 
-.cta h2 {
+.cta h2, .cta p {
   font-weight: var(--fw-bld);
-  margin-bottom: var(--margin-700);
+  margin-bottom: var(--margin-400);
   text-shadow: 1px 1px rgba(0, 0, 0, 0.701);
 }
 
@@ -378,7 +379,8 @@ nav .logo img {
 }
 
 .cta__button:hover {
-  background-color: #d14b43; /* Darker shade for hover effect */
+  background-color: #d14b43;
+  border: none; /* Darker shade for hover effect */
 }
 
 /*==================TESTIMONIALS================= */
@@ -397,6 +399,26 @@ nav .logo img {
 }
 
 /*==================EMAIL CONTACT================= */
+
+.contact__footer-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  
+}
+.contact__footer{
+  display: grid;
+  place-items: center;
+  gap: var(--gap-400);
+  
+}
+.contact__footer > *{
+  color: white;
+}
+.contact__footer i{
+  transform: scale(1.5);
+}
+
 
 .email__contact {
   display: grid;
@@ -470,6 +492,7 @@ nav .logo img {
 }
 .location__col p {
   padding-block: var(--padding-400);
+  color: white !important;
 }
 .contact h3 {
   font-weight: var(--fw-bld);
@@ -542,7 +565,9 @@ footer .line {
 }
 
 /*------------ SEO.HTML ---------------*/
-
+.seo{
+ 
+}
 
 .seo .banner {
   background-image: url("./assets/banner3.jpg");
@@ -578,6 +603,7 @@ footer .line {
   max-width: 55ch;
   padding-block: 12px;
 }
+
 
 /*------------ WEB DEV SERVICE.HTML ---------------*/
 .webdev .banner {
@@ -623,10 +649,44 @@ footer .line {
   position: absolute;
 top: 0;
   left: -20px;
-  color: #ec5b5342;
+  color:rgba(0, 0, 0, 0.15);
   font-size: 7rem;
   z-index: -1;
 }
+
+
+/*------------ MARKETING SERVICE.HTML ---------------*/
+.marketing .banner{
+  background-image: url(./assets/marketing1.jpg);
+  background-position: bottom;
+}
+.marketing__services-wrapper{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  justify-content: center;
+  gap: var(--gap-700);
+  padding-block: var(--padding-700);
+}
+.marketing__col p{
+  max-width: 50ch;
+  padding-block: var(--padding-600);
+}
+.marketing__services-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+
+}
+.marketing__services-list img{
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 100vw;
+}
+
+.marketing__services-box h2{
+  text-align: center;
+}
+
 
 /*------------ CRO SERVICE.HTML ---------------*/
 
@@ -635,7 +695,7 @@ top: 0;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 400px;
+  height: 500px;
   position: relative;
   overflow: hidden;
 }
@@ -646,7 +706,7 @@ top: 0;
   top: 50%;
   transform: translateY(-20%);
   font-size: var(--fs-700);
-  color: white;
+  color: white !important;
   margin-inline: auto;
   text-align: center;
   z-index: 1;
@@ -658,6 +718,9 @@ top: 0;
  
   font-size: 1.5rem;
   padding-right: 8px;
+ }
+ .explore__services__about:not(.contact) p{
+  color: var(--textSecondary);
  }
 .services__about-subhead h2 {
   text-align: center;
@@ -692,14 +755,7 @@ top: 0;
   padding-top: var(--padding-600);
   font-style: italic;
 }
-/* .explore__services__about .fa-quote-left {
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  color: #ec5b5342;
-  font-size: 7rem;
-  z-index: -1;
-} */
+
 
 /*------------ CONTACT US.HTML---------------*/
 .contact__us-header{
@@ -707,24 +763,29 @@ top: 0;
 }
 .nav__sub-pages{
   display: flex;
-  gap: var(--gap-400);
-  background-color: white;
+  gap: var(--gap-600);
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+
   list-style: none;
   margin-inline: auto;
-  padding: var(--padding-400) var(--padding-600);
+  padding: var(--padding-400) var(--padding-700);
   border-radius: 100vw;
 }
 
 .nav__sub-pages a{
-  color: var(--button);
+  color: white;
   text-decoration: none;
   font-weight: var(--fw-bld);
 
 
 }
 .nav__sub-pages a:hover{
-text-decoration: underline;
-text-underline-offset: 4px;
+color: var(--accent) ;
 
 }
 .contact__us .banner{
@@ -798,6 +859,10 @@ footer .location__col{
   .services__card-text {
     margin-top: auto;
   }
+  .services__card-text a:hover{
+color: var(--accent);}
+
+
   .services__card:first-child p,
   .services__card:last-child p {
     padding-bottom: 0;
@@ -844,4 +909,5 @@ footer .location__col{
   }
   .webdev__img{
   grid-template-columns: 1fr;
+}
 }
