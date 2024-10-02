@@ -12,6 +12,16 @@ mobileOpen.addEventListener('click', ()=>{
     navLinks.classList.toggle("active")
 })
 
+mobileClose.addEventListener('click', ()=>{
+  navLinks.classList.toggle('active')
+})
+
+links.forEach((link) => {
+  link.addEventListener('click', () =>{
+    navLinks.classList.toggle('active')
+  })
+})
+
 
 
 

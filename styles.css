@@ -160,7 +160,7 @@ nav {
   right: 0;
 
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px var(--padding-400);
   transition: background-color 0.3s ease;
   z-index: 10;
 }
@@ -561,6 +561,7 @@ footer .line {
 .footer h4 {
   color: var(--textSecondary);
   max-width: 50ch;
+  padding-inline: 6px;
 }
 
 .footer__links ul {
@@ -919,11 +920,9 @@ color: var(--accent);}
   .footer {
     gap: var(--gap-700);
     padding-block: var(--padding-600);
-    overflow-x: hidden;
+   
   }
-  iframe {
   
-  }
   .webdev__services__list ul {
     gap: 0;
     flex-wrap: wrap;
@@ -932,11 +931,20 @@ color: var(--accent);}
     max-height: 350px;
     max-width: 350px;
   }
+  iframe{
+    width: 375px;
+  }
+  .footer p{
+    text-align: center;
+  }
   
 }
 
 @media (max-width: 1000px) {
 
+nav{
+  
+}
   .mobile__open{
     display: block;
     color: white;
@@ -948,19 +956,19 @@ color: var(--accent);}
     flex-direction: column;
     background-color: black;
     width: 250px;
-    align-content: end;
-  justify-content: center;
+    justify-content: center;
+    align-items: center;
     padding-block: 5rem;
-    position: absolute;
+    position: fixed;
     top: 0;
-    
-    
     right: -200%;
     transition: 500ms ease;
   
   }
   .nav__links.active{
-    right: 0;
+    right: 0px;
+    
+    
    
   }
 .mobile__close{
@@ -977,7 +985,10 @@ color: var(--accent);}
   nav .btn{
     display: none;
   }
-
+  .sticky-nav{
+    justify-content: space-between;
+    padding-inline: var(--padding-600);
+  }
 
   .seo__services-box ul {
     display: grid;
@@ -991,6 +1002,11 @@ color: var(--accent);}
   .footer{
     grid-template-columns: 1fr;
     justify-content: center;
+    gap: var(--gap-600);
+ 
+  }
+  iframe{
+    max-width: 600px;
   }
   .webdev__img{
   grid-template-columns: 1fr;
