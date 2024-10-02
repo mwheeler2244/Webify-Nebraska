@@ -233,6 +233,13 @@ nav .logo img {
   margin-top: var(--margin-800);
   padding-bottom: var(--margin-600);
 }
+
+.mobile__open{
+  display: none;
+}
+.mobile__close{
+  display: none;
+}
 /*==================HERO================= */
 
 .hero {
@@ -929,6 +936,49 @@ color: var(--accent);}
 }
 
 @media (max-width: 1000px) {
+
+  .mobile__open{
+    display: block;
+    color: white;
+    cursor: pointer;
+  }
+ 
+  .nav__links{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 250px;
+    align-content: end;
+  justify-content: center;
+    padding-block: 5rem;
+    position: absolute;
+    top: 0;
+    
+    
+    right: -200%;
+    transition: 500ms ease;
+  
+  }
+  .nav__links.active{
+    right: 0;
+   
+  }
+.mobile__close{
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+  .mobile__close i{
+    color: white;
+  }
+
+  nav .btn{
+    display: none;
+  }
+
+
   .seo__services-box ul {
     display: grid;
     grid-template-columns: 1fr;

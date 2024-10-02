@@ -37,8 +37,15 @@
       
        
           <h3>Contact us</h3>
-          <form>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="70f7e2d3-d299-4c2c-afec-eb3be67514da"
+            />
+           
             <div class="submision">
+             
               <label for="name">Name:</label>
               <input
                 type="text"
@@ -78,6 +85,7 @@
                 placeholder="Enter a message"
               ></textarea>
             </div>
+        
             <button type="submit" class="btn">Send Message</button>
           </form>
         
