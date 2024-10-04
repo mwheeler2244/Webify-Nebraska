@@ -14,16 +14,22 @@
     />
   </head>
   <body>
-    <header >
+    <header id="hero">
       <nav class="wrapper">
-      
-        <ul class=" nav__sub-pages">
+        <div class="logo">
+          <a href="#hero"><img src="./assets/logoweb2.png" alt="" /></a>
+        </div>
+        <ul class="nav__links">
+          <div class="mobile__close"><i class="fa-solid fa-x"></i></div>
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
           <li><a href="index.html#services">SERVICES</a></li>
-       
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
-   
+        <button onclick="window.location.href='contact.html'" class="btn">
+          Get Started
+        </button>
+        <div class="mobile__open"><i class="fa-solid fa-bars"></i></div>
       </nav>
     </header>
     <main class="explore__services__about webdev">
@@ -32,45 +38,62 @@
       </div>
 
       <section class="webdev__about wrapper">
-       
         <div class="webdev__services-box">
-          
           <div class="webdev__services__list">
             <h2>How We Can Help</h2>
 
             <ul>
               <div class="col__left">
-                <li><i class="fa-regular fa-circle-check" style="color: #ec5b35;"></i>
-                  <strong>Custom Website Design</strong> We will create a visually
-                  appealing, user-friendly, and fully responsive website
-                  tailored to your business needs.
+                <li>
+                  <i
+                    class="fa-regular fa-circle-check"
+                    style="color: #ec5b35"
+                  ></i>
+                  <strong>Custom Website Design</strong> We will create a
+                  visually appealing, user-friendly, and fully responsive
+                  website tailored to your business needs.
                 </li>
-                <li><i class="fa-regular fa-circle-check" style="color: #ec5b35;"></i>
+                <li>
+                  <i
+                    class="fa-regular fa-circle-check"
+                    style="color: #ec5b35"
+                  ></i>
                   <strong>E-Commerce Integration</strong> If you sell products
                   or services online, We will set up a seamless e-commerce
                   experience with secure payment processing and easy-to-use
                   shopping features.
                 </li>
-                <li><i class="fa-regular fa-circle-check" style="color: #ec5b35;"></i>
-                  <strong>Performance Optimization: </strong> We will ensure your
-                  site is optimized for speed, improving load times and overall
-                  user experience.
+                <li>
+                  <i
+                    class="fa-regular fa-circle-check"
+                    style="color: #ec5b35"
+                  ></i>
+                  <strong>Performance Optimization: </strong> We will ensure
+                  your site is optimized for speed, improving load times and
+                  overall user experience.
                 </li>
               </div>
               <div class="col__right">
-                <li><i class="fa-regular fa-circle-check" style="color: #ec5b35;"></i>
+                <li>
+                  <i
+                    class="fa-regular fa-circle-check"
+                    style="color: #ec5b35"
+                  ></i>
                   <strong>Mobile Optimization: </strong> With more users
-                  browsing on mobile, we will ensure your site is fully responsive,
-                  looking great on all devices.
+                  browsing on mobile, we will ensure your site is fully
+                  responsive, looking great on all devices.
                 </li>
-                <li><i class="fa-regular fa-circle-check" style="color: #ec5b35;"></i>
+                <li>
+                  <i
+                    class="fa-regular fa-circle-check"
+                    style="color: #ec5b35"
+                  ></i>
                   <strong>Ongoing Maintenance:</strong> We offer maintenance
                   services to keep your website up to date, secure, and running
                   smoothly over time.
                 </li>
               </div>
             </ul>
-           
           </div>
         </div>
       </section>
@@ -148,6 +171,23 @@
             strategic web design solutions that enhance user experience, drive
             engagement, and achieve measurable results.
           </p>
+          <div class="contact__links">
+            <div class="about__footer">
+              <i class="fa-regular fa-compass"></i>
+              <h4>Location:</h4>
+              <p>Lincoln, NE USA</p>
+            </div>
+            <div class="about__footer">
+              <i class="fa-regular fa-envelope"></i>
+              <h4>Email:</h4>
+              <p>mwheeler@gmail.com</p>
+            </div>
+            <div class="about__footer">
+              <i class="fa-solid fa-phone"></i>
+              <h4>Phone:</h4>
+              <p>+1 402-570-4821</p>
+            </div>
+          </div>
         </div>
         <div class="footer__links">
           <h4>Useful Links</h4>
@@ -172,5 +212,6 @@
       </div>
       <p class="copywrite">@Copywrite 2024 Privacy Policy</p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

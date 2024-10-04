@@ -14,16 +14,20 @@
     />
   </head>
   <body>
-    <header >
+    <header id="hero">
       <nav class="wrapper">
-      
-        <ul class=" nav__sub-pages">
+        <div class="logo">
+          <a href="#hero"><img src="./assets/logoweb2.png" alt="" /></a>
+        </div>
+        <ul class="nav__links">
+          <div class="mobile__close"><i class="fa-solid fa-x"></i></div>
           <li><a href="index.html">HOME</a></li>
-          <li><a href="">ABOUT</a></li>
+          <li><a href="about.html">ABOUT</a></li>
           <li><a href="index.html#services">SERVICES</a></li>
-       
+          <li><a href="contact.html">CONTACT</a></li>
         </ul>
-   
+        <button onclick="window.location.href='contact.html'"  class="btn" >Get Started</button>
+        <div class="mobile__open"><i class="fa-solid fa-bars"></i></div>
       </nav>
     </header>
     <main class="explore__services__about about">
@@ -143,5 +147,6 @@
     </div>
       <p class="copywrite">@Copywrite 2024 Privacy Policy</p>
     </footer>
+    <script src="main.js" ></script>
   </body>
 </html>

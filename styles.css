@@ -165,7 +165,7 @@ nav {
   z-index: 10;
 }
 .sticky-nav {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--background);
   position: fixed;
   top: 0;
   left: 0;
@@ -176,7 +176,6 @@ nav {
 }
 nav .logo img {
   width: 75px;
-  border-radius: 100vw;
 }
 .nav__links {
   display: flex;
@@ -411,25 +410,22 @@ nav .logo img {
 }
 
 /*==================FOUNDER QUOTE================= */
+.founder__quote {
+  display: grid;
+  place-items: center;
+}
 
-
-.founder__quote-content{
- 
+.founder__quote-content {
   font-size: var(--fs-600);
   font-style: italic;
   max-width: 50ch;
-  margin-inline: auto;
-height: 400px;
- 
-  align-content: center;
-  
- 
+  padding-block: var(--padding-700);
 }
-.founder__quote .fa-solid:first-of-type{
-  padding-right:var(--padding-400);
+.founder__quote .fa-solid:first-of-type {
+  padding-right: var(--padding-400);
 }
-.founder__quote .fa-solid:last-of-type{
-  padding-left:var(--padding-400);
+.founder__quote .fa-solid:last-of-type {
+  padding-left: var(--padding-400);
 }
 
 /*==================EMAIL CONTACT================= */
@@ -557,9 +553,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-footer {
-  padding-top: 75px;
-}
+
 footer .line {
   width: 100%;
   border-bottom: 1px solid rgb(200, 200, 200);
@@ -688,7 +682,7 @@ footer .line {
 .marketing .banner {
   background-image: url(./assets/marketing2.jpg);
   background-size: contain;
-  background-position: center;
+  background-position: top;
 }
 .marketing__services-wrapper {
   display: grid;
@@ -714,7 +708,7 @@ footer .line {
   width: 100%;
   border-radius: 100vw;
 }
-.marketing__services-box{
+.marketing__services-box {
   padding-bottom: 175px;
 }
 
@@ -746,7 +740,7 @@ footer .line {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 500px;
+  height: 400px;
   position: relative;
   overflow: hidden;
 }
@@ -874,6 +868,7 @@ footer .location__col {
   display: grid;
   place-items: center;
   gap: var(--gap-400);
+  padding-top: 100px;
 }
 .location__footer i {
   scale: 2;
@@ -885,49 +880,58 @@ footer .location__col {
   color: black;
 }
 
-
 /*------------ ABOUT.HTML---------------*/
 
-.about .banner{
+.about .banner {
   background-image: url(./assets/about6.jpg);
+  background-position: bottom;
+  background-size: cover;
+  height: 500px;
 }
-.about .explore__services__about-title{
- 
+.about .explore__services__about-title {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.49);
 }
-.about .container{
+.about .container {
   max-width: 65ch;
   margin-inline: auto;
   padding-top: var(--padding-700);
 }
 
-.about__header h1{
+.about__header h1 {
   padding-bottom: var(--padding-400);
 }
 .about__header {
   text-align: center;
   padding-block: var(--padding-600);
 }
-.about__box{
+.about__box {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--gap-600);
 }
-.about__card h2{
+.about__card h2 {
   padding-bottom: var(--padding-400);
 }
-.about__footer{
+.about__footer {
   display: grid;
   place-items: center;
-  gap:10px;
+  gap: 10px;
+  font-size: 1rem;
+  margin-inline: auto;
+}
+.about__footer > * {
+  font-size: 0.75rem;
 }
 
-.contact__links{
+.contact__links {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-top: var(--padding-400);
 }
-
+.contact__links i {
+  font-size: 1.25rem;
+}
 
 @media (max-width: 800px) {
   .email__container {
@@ -986,12 +990,11 @@ footer .location__col {
 }
 
 @media (max-width: 1000px) {
-  
   .mobile__open {
     display: block;
     color: white;
     cursor: pointer;
-    font-size: 2rem
+    font-size: 2rem;
   }
 
   .nav__links {
@@ -1026,7 +1029,6 @@ footer .location__col {
   }
   .sticky-nav {
     justify-content: space-between;
-    padding-inline: var(--padding-600);
   }
 
   .seo__services-box ul {
