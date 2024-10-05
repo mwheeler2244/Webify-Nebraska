@@ -816,7 +816,7 @@ footer .line {
   list-style: none;
   margin-inline: auto;
   padding: var(--padding-400) var(--padding-700);
-  border-radius: 100vw;
+  
 }
 
 .nav__sub-pages a {
