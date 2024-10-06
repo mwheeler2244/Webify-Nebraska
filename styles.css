@@ -174,7 +174,8 @@ nav {
   justify-content: space-evenly;
 }
 nav .logo img {
-  width: 105px;
+  width: 75px;
+  height: 75px;
 }
 .nav__links {
   display: flex;
