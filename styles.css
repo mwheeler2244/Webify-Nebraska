@@ -1,7 +1,7 @@
 :root {
   --background: white;
   --primary: #0a303f;
-  --button: #e41c38;
+  --button: #d00000;
   --textSecondary: rgb(75, 73, 73);
   --accent: #0082be;
 
@@ -281,6 +281,16 @@ nav .logo img {
   font-weight: var(--fw-light);
   text-transform: capitalize;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 /*==================INTRO================= */
 
@@ -447,6 +457,7 @@ nav .logo img {
 }
 .contact__footer i {
   transform: scale(1.5);
+  color: #d00000;
 }
 
 .email__contact {
@@ -617,7 +628,7 @@ footer .line {
 .seo__services-box img {
   max-height: 450px;
   max-width: 450px;
-
+margin-bottom: 2rem;
   border-radius: 12px;
 }
 
@@ -626,10 +637,12 @@ footer .line {
 
   padding-bottom: var(--padding-700);
 }
+
 .seo__col li {
   max-width: 55ch;
   padding-block: 12px;
 }
+
 
 /*------------ WEB DEV SERVICE.HTML ---------------*/
 .webdev .banner {
@@ -863,7 +876,7 @@ footer .location__col {
 .location__footer {
   display: grid;
   place-items: center;
-  gap: var(--gap-400);
+  gap: 4px;
   padding-top: 100px;
 }
 .location__footer i {
@@ -973,6 +986,7 @@ footer .location__col {
   .webdev__services__list ul {
     gap: 0;
     flex-wrap: wrap;
+
   }
   .seo__services-box img {
     max-height: 350px;
