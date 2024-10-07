@@ -922,6 +922,12 @@ footer .location__col {
 .about__card h2 {
   padding-bottom: var(--padding-400);
 }
+.about__card li{
+  margin-bottom: 8px;
+  margin-left: 16px;
+  list-style-type: disc;
+  
+}
 .about__footer {
   display: grid;
   place-items: center;
