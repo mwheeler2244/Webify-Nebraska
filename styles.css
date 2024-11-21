@@ -320,7 +320,7 @@ nav .logo img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--gap-400);
+  gap: 4rem;
 }
 
 .services__card {
@@ -340,10 +340,6 @@ nav .logo img {
 }
 .services__card-text p {
   font-size: 1.25rem;
-}
-.services__card:first-child p,
-.services__card:last-child p {
-  padding-bottom: 1.8rem;
 }
 
 .services__card-text a {
@@ -629,7 +625,7 @@ footer .line {
 .seo__services-box img {
   max-height: 450px;
   max-width: 450px;
-margin-bottom: 2rem;
+  margin-bottom: 2rem;
   border-radius: 12px;
 }
 
@@ -643,7 +639,6 @@ margin-bottom: 2rem;
   max-width: 55ch;
   padding-block: 12px;
 }
-
 
 /*------------ WEB DEV SERVICE.HTML ---------------*/
 .webdev .banner {
@@ -828,7 +823,6 @@ margin-bottom: 2rem;
   list-style: none;
   margin-inline: auto;
   padding: var(--padding-400) var(--padding-700);
-  
 }
 
 .nav__sub-pages a {
@@ -923,11 +917,10 @@ footer .location__col {
 .about__card h2 {
   padding-bottom: var(--padding-400);
 }
-.about__card li{
+.about__card li {
   margin-bottom: 8px;
   margin-left: 16px;
   list-style-type: disc;
-  
 }
 .about__footer {
   display: grid;
@@ -993,7 +986,6 @@ footer .location__col {
   .webdev__services__list ul {
     gap: 0;
     flex-wrap: wrap;
-
   }
   .seo__services-box img {
     max-height: 350px;
