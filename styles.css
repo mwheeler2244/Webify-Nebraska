@@ -587,6 +587,7 @@ footer .line {
 .footer__links ul {
   list-style: none;
   display: grid;
+  justify-items: center;
   gap: 8px;
   padding-top: var(--padding-600);
 }
